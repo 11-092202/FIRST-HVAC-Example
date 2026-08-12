@@ -1,0 +1,251 @@
+/* =========================================================
+   Mecko's Heating & Cooling — responsive.css
+   Tablet and mobile adaptations (not just scaled-down desktop)
+   ========================================================= */
+
+/* ---------- Tablet (<=1024px) ---------- */
+@media (max-width: 1024px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__panel {
+    order: -1;
+  }
+
+  .hero__quicklinks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  .split .split__media {
+    order: -1;
+  }
+
+  .stats-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+}
+
+/* ---------- Mobile nav breakpoint (<=880px) ---------- */
+@media (max-width: 880px) {
+  .topbar__left span.hide-mobile {
+    display: none;
+  }
+
+  .header-cta__phone {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: min(320px, 84vw);
+    background: var(--color-navy-dark);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 90px 24px 24px;
+    transform: translateX(100%);
+    transition: transform 0.28s ease;
+    z-index: 1100;
+    overflow-y: auto;
+  }
+
+  .main-nav.open {
+    transform: translateX(0);
+  }
+
+  .main-nav > ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+  }
+
+  .main-nav a.nav-link {
+    color: #fff;
+    justify-content: space-between;
+    padding: 14px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0;
+  }
+
+  .main-nav a.nav-link:hover,
+  .main-nav li.open > a.nav-link {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--color-orange);
+  }
+
+  .dropdown {
+    position: static;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: none;
+    min-width: 100%;
+  }
+
+  .main-nav li.open .dropdown {
+    display: block;
+  }
+
+  .dropdown a {
+    color: rgba(255, 255, 255, 0.82);
+  }
+
+  .dropdown a:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--color-orange);
+  }
+
+  .nav-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 37, 66, 0.55);
+    z-index: 1050;
+  }
+
+  .nav-backdrop.open {
+    display: block;
+  }
+
+  .nav-mobile-cta {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 881px) {
+  .nav-mobile-cta {
+    display: none;
+  }
+}
+
+/* ---------- Mobile (<=768px) ---------- */
+@media (max-width: 768px) {
+  .section {
+    padding: 52px 0;
+  }
+
+  .hero {
+    padding: 56px 0 44px;
+    text-align: left;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__actions .btn {
+    justify-content: center;
+  }
+
+  .hero__quicklinks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-cards,
+  .grid-4,
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stats-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .page-hero {
+    padding: 44px 0;
+  }
+
+  .ai-assistant-panel {
+    right: 12px;
+    left: 12px;
+    width: auto;
+    bottom: 92px;
+  }
+
+  .ai-assistant-launcher {
+    right: 16px;
+    bottom: 16px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .map-embed iframe {
+    height: 280px;
+  }
+}
+
+/* ---------- Small mobile (<=480px) ---------- */
+@media (max-width: 480px) {
+  .container {
+    padding-inline: 18px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  .logo__text strong {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  .topbar__right span.hide-mobile-sm {
+    display: none;
+  }
+}

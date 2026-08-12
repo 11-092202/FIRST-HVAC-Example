@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Contact Us & Service Request | Mecko's Heating & Cooling</title>
+<meta name="description" content="Contact Mecko's Heating & Cooling or request service online. Serving Greater Lafayette, Indiana with 24/7 emergency heating and cooling repair." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar__left">
+      <span><i class="fa-solid fa-location-dot"></i> 418 1/2 Sagamore Pkwy N, Lafayette, IN</span>
+      <span class="hide-mobile"><i class="fa-solid fa-clock"></i> 24/7 Emergency Service Available</span>
+    </div>
+    <div class="topbar__right">
+      <span class="hide-mobile-sm"><i class="fa-solid fa-fax"></i> Fax: 765-448-2988</span>
+      <div class="topbar__social">
+        <a href="https://facebook.com/meckosheating" target="_blank" rel="noopener" aria-label="Mecko's on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo__mark"><i class="fa-solid fa-fire-flame-simple"></i></span>
+      <span class="logo__text"><strong>Mecko's</strong><span>Heating &amp; Cooling</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="has-dropdown">
+          <a href="services.html" class="nav-link">Services <span class="nav-caret"></span></a>
+          <div class="dropdown">
+            <a href="services.html#residential">Residential HVAC</a>
+            <a href="services.html#commercial">Commercial HVAC</a>
+            <a href="services.html#maintenance">Maintenance Agreements</a>
+            <a href="services.html#emergency">24/7 Emergency Service</a>
+          </div>
+        </li>
+        <li><a href="products.html" class="nav-link">HVAC Products</a></li>
+        <li><a href="energy-savings.html" class="nav-link">Energy Savings</a></li>
+        <li><a href="blog.html" class="nav-link">Dave's Blog</a></li>
+        <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+      <div class="nav-mobile-cta">
+        <a href="contact.html" class="btn btn-primary btn-block">Request Service</a>
+      </div>
+    </nav>
+    <div class="header-cta">
+      <div class="header-cta__phone">
+        <small>Call Now — 24/7</small>
+        <a href="tel:7654477555">765-447-7555</a>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Request Service</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-backdrop"></div>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumbs"><a href="index.html">Home</a> / Contact Us</p>
+      <h1>Contact Us &amp; Request Service</h1>
+      <p>Have a question or need to schedule a repair, tune-up, or new installation? Reach out below or call our 24/7 line.</p>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT + FORM ================= -->
+  <section class="section">
+    <div class="container split">
+
+      <div class="form-card">
+        <h2 style="margin-bottom:6px;">Request Service</h2>
+        <p style="margin-bottom:24px;">Fill out the form and our team will follow up to confirm your appointment.</p>
+        <form data-validate novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="address">Service Address</label>
+            <input type="text" id="address" name="address" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" required />
+            </div>
+            <div class="form-group">
+              <label for="serviceType">Service Needed</label>
+              <select id="serviceType" name="serviceType" required>
+                <option value="">Select one...</option>
+                <option value="residential-repair">Residential Repair</option>
+                <option value="residential-install">Residential Installation</option>
+                <option value="commercial">Commercial Service</option>
+                <option value="maintenance">Maintenance Agreement</option>
+                <option value="emergency">24/7 Emergency</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">How Can We Help?</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" id="consent" name="consent" required />
+            <label for="consent">By submitting this form, you agree that Mecko's Heating &amp; Cooling may contact you about your service request by phone, text, or email.</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-paper-plane"></i> Send Request
+          </button>
+        </form>
+      </div>
+
+      <div>
+        <span class="eyebrow">Get In Touch</span>
+        <h2 style="margin-bottom:24px;">Mecko's Heating &amp; Cooling</h2>
+        <div class="info-list">
+          <div class="info-item">
+            <div class="icon-badge"><i class="fa-solid fa-phone"></i></div>
+            <div><strong>Call Us — 24/7</strong><a href="tel:7654477555">765-447-7555</a></div>
+          </div>
+          <div class="info-item">
+            <div class="icon-badge"><i class="fa-solid fa-fax"></i></div>
+            <div><strong>Fax</strong><span>765-448-2988</span></div>
+          </div>
+          <div class="info-item">
+            <div class="icon-badge"><i class="fa-solid fa-location-dot"></i></div>
+            <div><strong>Physical Address</strong><span>418 1/2 Sagamore Pkwy N, Lafayette, IN 47904</span></div>
+          </div>
+          <div class="info-item">
+            <div class="icon-badge"><i class="fa-solid fa-envelope-open-text"></i></div>
+            <div><strong>Mailing Address</strong><span>P.O. Box 4982, Lafayette, IN 47903</span></div>
+          </div>
+          <div class="info-item">
+            <div class="icon-badge"><i class="fa-brands fa-facebook-f"></i></div>
+            <div><strong>Facebook</strong><a href="https://facebook.com/meckosheating" target="_blank" rel="noopener">facebook.com/meckosheating</a></div>
+          </div>
+          <div class="info-item">
+            <div class="icon-badge"><i class="fa-solid fa-clock"></i></div>
+            <div><strong>Emergency Service</strong><span>Available 24 hours a day, residential &amp; commercial</span></div>
+          </div>
+        </div>
+
+        <div class="map-embed" style="margin-top:28px;">
+          <iframe
+            src="https://www.google.com/maps?q=418+1/2+Sagamore+Pkwy+N,+Lafayette,+IN+47904&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mecko's Heating & Cooling location map">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PAYMENT NOTE ================= -->
+  <section class="section-tight bg-off-white">
+    <div class="container text-center">
+      <span class="eyebrow">Payment Options</span>
+      <h2>Flexible Ways to Pay</h2>
+      <p style="max-width:560px;margin-inline:auto;">We want it to be easy to do business with Mecko's. Ask our team about accepted payment methods and available financing options when you schedule service.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo__mark"><i class="fa-solid fa-fire-flame-simple"></i></span>
+          <span class="logo__text"><strong>Mecko's</strong><span>Heating &amp; Cooling</span></span>
+        </a>
+        <p>Serving Greater Lafayette, Indiana with residential and commercial heating, cooling, and indoor comfort services.</p>
+        <div class="footer-social">
+          <a href="https://facebook.com/meckosheating" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#residential">Residential HVAC</a></li>
+          <li><a href="services.html#commercial">Commercial HVAC</a></li>
+          <li><a href="services.html#maintenance">Maintenance Agreements</a></li>
+          <li><a href="products.html">HVAC Products</a></li>
+          <li><a href="energy-savings.html">Energy Savings</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="blog.html">Dave's Blog</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Service Request</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <address>
+          <a href="tel:7654477555"><i class="fa-solid fa-phone"></i> 765-447-7555</a>
+          <span><i class="fa-solid fa-fax"></i> Fax: 765-448-2988</span>
+          <span><i class="fa-solid fa-location-dot"></i> 418 1/2 Sagamore Pkwy N, Lafayette, IN 47904</span>
+          <span><i class="fa-solid fa-envelope-open-text"></i> Mailing: P.O. Box 4982, Lafayette, IN 47903</span>
+        </address>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Mecko's Heating &amp; Cooling. All rights reserved.</p>
+      <p>Serving Greater Lafayette, Indiana — Where Smiles Are Guaranteed.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="ai-assistant-launcher" role="button" tabindex="0" aria-label="Open AI assistant" aria-expanded="false">
+  <span class="pulse"></span>
+  <i class="fa-solid fa-comment-dots" style="position:relative;z-index:1;font-size:1.4rem;"></i>
+</div>
+<div class="ai-assistant-panel" aria-hidden="true">
+  <div class="ai-assistant-panel__header">
+    <div>
+      <h4>Mecko's Assistant</h4>
+      <span>Prepared for future AI integration</span>
+    </div>
+    <button class="ai-assistant-panel__close" aria-label="Close assistant">&times;</button>
+  </div>
+  <div class="ai-assistant-panel__body">
+    <span class="badge-soon">Coming soon</span>
+    <p>This assistant panel is a placeholder UI, ready for a future AI backend. For real help right now, call us at <a href="tel:7654477555">765-447-7555</a>.</p>
+  </div>
+  <form class="ai-assistant-panel__input" data-demo="true">
+    <input type="text" placeholder="Type a message..." aria-label="Message" />
+    <button type="submit" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+  </form>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/ai-assistant.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
