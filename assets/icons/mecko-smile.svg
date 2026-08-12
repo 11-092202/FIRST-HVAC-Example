@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#FEF84C" stroke="#DC3232" stroke-width="4"/>
+  
+  <!-- Left eye -->
+  <circle cx="70" cy="80" r="12" fill="#0B3358"/>
+  
+  <!-- Right eye -->
+  <circle cx="130" cy="80" r="12" fill="#0B3358"/>
+  
+  <!-- Smile curve -->
+  <path d="M 70 110 Q 100 140 130 110" stroke="#0B3358" stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>
